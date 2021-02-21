@@ -167,9 +167,7 @@ a {
 
 /* MEDIA QUERIES */
 @media (max-width: 1200px) {
-  .container {
-    background: chartreuse;
-  }
+
   .appbar-nav ul {
     display: none;
    
