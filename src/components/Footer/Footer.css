@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+.footer {
+  background-color: var(--clr-accent-footer);
+  position: relative;
+  padding-bottom: 200px;
+}
+
+.footer > * {
+  color: var(--clr-background-secondary);
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-main :nth-child(1) {
+  position: relative;
+  /* top: -14px; */
+}
+
+.footer-main :nth-child(2) h3 {
+  width: 452px;
+  height: 100px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  /* or 100% */
+
+  letter-spacing: -0.03em;
+}
+
+.footer-main :nth-child(2) p {
+  width: 368px;
+  height: 60px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+
+  letter-spacing: 0.02em;
+}
+
+.img-parent {
+  position: relative;
+}
+
+.img-parent img {
+  position: relative;
+  top: -35px;
+  left: 45px;
+}
+
+/* FOOTER LINKS */
+.footer-links {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links ul > * {
+}
+
+.footer-links-heading {
+  width: 179.01px;
+  height: 26px;
+  margin-bottom: 25px;
+
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 19px;
+}
+
+.footer-links-child {
+  width: 179.01px;
+  height: 26px;
+  padding: 10px 0;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.social-media-links {
+  display: flex;
+  margin-top: 12px;
+}
+
+.social-media-links li {
+  margin-top: 10px;
+  margin: 0 3px;
+}
+
+.social-media-text {
+  width: 179.01px;
+  height: 26px;
+  margin-top: 65px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+  .footer-main {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .img-parent {
+    margin-top: 30%;
+  }
+  .social-media-links {
+    flex-wrap: wrap;
+  }
+}

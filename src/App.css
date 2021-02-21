@@ -1,38 +1,230 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+:root {
+  --clr-primary-heading: #000;
+  --clr-secondary-heading: #fff;
+
+  --clr-secondary-paragraph: #494949;
+  --clr-accent-primary: #0d019a;
+  --clr-accent-secondary: #eef8ff;
+
+  --clr-accent-primary2: #049a01;
+  --clr-accent-secondary2: #f0ffee;
+
+  --clr-accent-primary3: #ff5c00;
+  --clr-accent-primary3-border: rgba(255, 92, 0, 0.4);
+
+  --clr-accent2: #535353;
+  --clr-accent-footer: #25201d;
+
+  --clr-background-secondary: #fff8f5;
+  --clr-background-secondary2: #222222;
+
+  --clr-accent3-search-bar: rgba(255, 255, 255, 0.2);
+
+  --clr-text-heading-primary: #474747;
+  /* MOBILE CLASSES */
+  --ff-heading: "Inter";
+
+  /* && desktop 2nd h tag */
+  --fs-heading-800: 2rem;
+
+  /* && desktop 1st p tag */
+  --fs-heading-600: 1.125rem;
+
+  --fs-heading-400: 1rem;
+
+  /* Adetola fashina font */
+  --fs-heading-700: 1.5rem;
+
+  /* In Ikeja font */
+  --fs-heading-300: 0.9375rem;
+
+  /* Vendor Font && nav Items 4 desktop */
+  --fs-heading-200: 0.8125rem;
+
+  /* DESKTOP CLASSES */
+
+  --fs-heading-900: 3rem;
+
+  --fs-footer-600: 2.55rem;
+
+  --fs-footer-400: 0.8125rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.main {
+  position: relative;
+  height: 596px;
+}
+
+.main > img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  height: 568px;
+}
+.margin-class {
+  /* margin: 0 17.5%; */
+  max-width: 80vw;
+  width: 1300px;
+  margin: auto;
+}
+
+.container {
+  height: 80px;
+}
+.container,
+.appbar-nav ul {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.material-btn {
+  background-color: var(--clr-accent-primary3);
+  color: var(--clr-accent-secondary2);
+  box-shadow: 1px 4px 8px rgba(239, 88, 3, 0.2);
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.appbar-nav ul li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--fs-heading-200);
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+  letter-spacing: 0.05em;
+  margin: 0 0.9375rem;
+}
+
+.border-class {
+  border: 1px solid red;
+}
+
+.border-class-main {
+  border: 1px solid transparent;
+}
+
+/* MAIN SECTION */
+#main-section {
+  margin-top: 8rem;
+}
+
+#main-section h1 {
+  width: 586px;
+  height: 180px;
+  left: 174px;
+  top: 258px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-family: var(--ff-heading);
+  font-size: var(--fs-heading-900);
+  line-height: 60px;
+  letter-spacing: 0.02em;
+}
+
+#main-section p {
+  margin-top: 24px;
+  width: 489px;
+  height: 62px;
+  left: 173px;
+  top: 462px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 31px;
+  
+
+  letter-spacing: 0.02em;
+
+  color: #494949;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+  .container {
+    background: chartreuse;
   }
-  to {
-    transform: rotate(360deg);
+  .appbar-nav ul {
+    display: none;
+   
+  }
+
+  .main{
+      display: inline-block;
+      margin: 0 10%;
+      width: 100%;
+      line-height: 10px;
+       /* border: 1px solid; */
+  }
+
+  
+  .main > img{
+      position: relative;
+   
+      width: 80%;
+      height: calc(100% - 78px);
+      
+  }
+
+  #main-section{
+      display: inline-block;
+    
+    
+   
+   margin-top: 40px;
+  }
+
+  #main-section h1, #main-section p{
+    width: 300px;
+  }
+  #main-section h1{
+   
+    font-size: 2rem; 
+    width: 300px;
+    line-height: 35px;
+  }
+
+  #main-section p{
+    font-size: 1rem;  
+  }
+
+  
+
+
+}
+
+@media (max-width: 500px){
+
+  /* .container {
+    background: chocolate;
+  } */
+  .main img{
+    transform: scale(2.4);
   }
 }

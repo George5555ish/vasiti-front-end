@@ -1,0 +1,16 @@
+.secondary-main{
+    background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.08);
+box-sizing: border-box;
+box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.04);
+}
+
+.secondary-ul{
+    height: 49px;
+    
+}
+
+.secondary-margin{
+    margin: 0 auto;
+    width: 1100px;
+}
