@@ -83,11 +83,12 @@ function Footer() {
   return (
     <section className="footer">
       <div className="margin-class footer-main">
-        <div>
+        <div className="footer-container">
           <li>
             {" "}
            <div className="img-parent">
            <img
+              
               src={process.env.PUBLIC_URL + "/images/subscribe-banner1.svg"}
               alt="logo"
             />
